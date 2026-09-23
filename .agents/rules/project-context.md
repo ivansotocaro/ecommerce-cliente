@@ -12,6 +12,7 @@
 | Frontend | **Nuxt.js (Vue)** | Todo el diseño y animaciones viven aquí. |
 | Base de datos | **MySQL** | Se usa en TODOS los entornos, incluido desarrollo local — no usar SQLite ni siquiera para pruebas rápidas, para evitar diferencias de comportamiento entre entornos. |
 | Imágenes | **Cloudinary**, desde el día uno | No usar almacenamiento local ni en desarrollo ni en producción — evita migraciones posteriores y el problema de archivos que se borran en cada deploy. Las imágenes en Cloudinary NO se borran con los deploys de código. Usar carpetas separadas por entorno dentro de Cloudinary (`CLOUDINARY_FOLDER=dev` vs `CLOUDINARY_FOLDER=produccion`) para que las pruebas nunca se mezclen con el catálogo real. |
+| Diseño / UI | **Google Stitch + MCP** | El proyecto Stitch "ADORA Luxury Boutique E-Commerce" (ID: 12740064253152359896) es la fuente de verdad del diseño. El Stitch MCP Server permite que Antigravity lea el Design DNA directo del proyecto. Agente puede consultar pantallas, componentes, tokens de color, tipografía en cualquier momento. |
 | Pagos | **Wompi** (Colombia) | Módulo aislado en `backend/src/api/payment/`. Cuenta comercial la crea la clienta, no el desarrollador. |
 | Envío | Cálculo por zona/ciudad | Módulo aislado en `backend/src/api/shipping/`. Tabla de tarifas configurable, no hardcodeada. |
 | Node.js | v22, v24 o v26 (LTS/par) | Nunca instalar versiones impares (23, 25) — no son compatibles con Strapi. |

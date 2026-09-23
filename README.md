@@ -10,7 +10,8 @@ Antes de tocar código, lee estos archivos en orden:
 
 1. **`SPEC.md`** — Qué construye la v1 (alcance del MVP, reglas de negocio)
 2. **`.agents/rules/project-context.md`** — Reglas técnicas, stack fijo, estructura de carpetas, librerías permitidas
-3. **`.env.example`** — Variables de entorno que necesitas configurar
+3. **`DESIGN.md`** — Sistema de diseño desde Stitch (fuente de verdad visual)
+4. **`.env.example`** — Variables de entorno que necesitas configurar
 
 ---
 
@@ -22,6 +23,7 @@ Antes de tocar código, lee estos archivos en orden:
 | Frontend | **Nuxt.js** (Vue) |
 | Base de datos | **MySQL** (todos los entornos) |
 | Imágenes | **Cloudinary** (dev/produccion separados) |
+| Diseño / UI | **Google Stitch + MCP** (fuente de verdad, proyecto ADORA) |
 | Pagos | **Wompi** (Colombia) |
 | Animaciones | **GSAP** |
 | Estado (frontend) | **Pinia** |
@@ -67,7 +69,7 @@ El proyecto se divide en 8 fases. Cada fase tiene un entregable que se puede pro
 3. **Fase 2** — Autenticación de clientes (login/registro)
 4. **Fase 3** — Carrito de compras
 5. **Fase 4** — Checkout y pagos (integración Wompi)
-6. **Fase 5** — Diseño y animaciones premium (en paralelo con 1-4)
+6. **Fase 5** — Diseño y animaciones premium (lee Stitch vía MCP, construye componentes Vue con tokens del sistema)
 7. **Fase 6** — Panel de administración para la clienta
 8. **Fase 7** — Optimización y QA
 9. **Fase 8** — Lanzamiento a producción
